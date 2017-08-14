@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.duodian.admore.android.sdk.adview.appwall.AdmoreAppWallView
+                android:id="@+id/admoreAppWallView"
+                android:layout_width="90dp"
+                android:layout_height="90dp" />
+
+            <com.duodian.admore.android.sdk.adview.appwall.AdmoreAppWallView
+                android:id="@+id/admoreAppWallView1"
+                android:layout_width="90dp"
+                android:layout_height="90dp" />
+
+            <com.duodian.admore.android.sdk.adview.appwall.AdmoreAppWallView
+                android:id="@+id/admoreAppWallView2"
+                android:layout_width="90dp"
+                android:layout_height="90dp" />
+        </LinearLayout>
+
+
+        <com.duodian.admore.android.sdk.adview.drift.AdmoreDriftView
+            android:id="@+id/floatingAdView"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            app:admore_shape="circular" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonDrift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="浮标" />
+
+            <Button
+                android:id="@+id/buttonAppWall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/floatingAdView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="应用墙" />
+
+            <Button
+                android:id="@+id/buttonLog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="查看Log" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp" />
+    </LinearLayout>
+</ScrollView>
